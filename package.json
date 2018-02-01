@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.11",
+    "gulp": "^3.9.1",
     "gulp-browserify": "~0.5.0",
     "gulp-clean": "~0.3.1",
     "gulp-cssmin": "~0.1.6",
@@ -20,5 +20,11 @@
     "gulp-uglify": "~1.0.1",
     "gulp-webserver": "~0.8.4",
     "jshint-stylish": "~1.0.0"
+  },
+  "dependencies": {
+    "dart-sass": "^1.0.0-beta.4",
+    "node-sass": "^4.7.2",
+    "sass": "^1.0.0-beta.4",
+    "scss": "^0.2.4"
   }
 }
