@@ -1,7 +1,4 @@
 var map;
-$(function(){
-  initialize();
-});
 
 var infowindow = null;
 var cm = [-23.572658, -46.695643];
@@ -17,7 +14,7 @@ function initialize() {
       streetViewControl: false,
       navigationControl: true,
       navigationControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'planb']
+        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'tappers']
       }
     }
 
@@ -31,11 +28,11 @@ function initialize() {
         stylers: [{ saturation: 20 }]
       }
     ];
-    var pinMapType = new google.maps.StyledMapType(m_styles ,{name: "Plan B"});
+    var pinMapType = new google.maps.StyledMapType(m_styles ,{name: "tappers"});
  	// Associando o estilo do mapa com o tipo do mapa
-	map.mapTypes.set('planb', pinMapType);
+	map.mapTypes.set('tappers', pinMapType);
 	// indicando estilo de mapa inicial
-	map.setMapTypeId('planb');
+	map.setMapTypeId('tappers');
 
     setMarkers(map, sites);
     infowindow = new google.maps.InfoWindow({

@@ -96,12 +96,12 @@ body{
             top: 50%;
         }
     }
-    h2{
+    span{
         margin: 0;
         color: #fe6a60;
         font-weight: 400;
         font-size: 14px;
-        line-height: 30px;
+        line-height: 20px;
         position: relative;
     }
     .scan-content{
@@ -109,6 +109,9 @@ body{
         margin-top: 50px;
         height: 150px;
         position: relative;
+    }
+    .button{
+        width: 100%;
     }
 }
 
