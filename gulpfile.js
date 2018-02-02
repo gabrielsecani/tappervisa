@@ -12,7 +12,7 @@ sass = require('gulp-ruby-sass'),
 web = require('gulp-webserver');
 
 
-var do_browserify = true;
+var do_browserify = false;
 
 
 gulp.task('hint', function() {

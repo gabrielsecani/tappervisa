@@ -6967,6 +6967,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
       left: -47px;
       transform: translateY(-50%);
       top: 50%; }
+  .scan h2 {
+    margin: 0;
+    color: #fe6a60;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative; }
   .scan .scan-content {
     margin-top: 50px;
     height: 150px;
