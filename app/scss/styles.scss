@@ -170,37 +170,6 @@ body{
 }
 
 .info{
-    header{
-        background: #fe6a60;
-        height: 80px;
-        position: relative;
-    }
-
-    .user-data{
-        position: absolute;
-        display: flex;
-        height: 80px;
-        top: 40px;
-        left: 55px;
-
-        img{
-            width: 60px;
-            border-radius: 60px;
-            height: 60px;
-        }
-        p{
-            color: #FFF;
-            font-size: 16px;
-            margin: 10px 0 0 20px;
-        }
-    }
-
-    .button-collapse{
-        color: #FFF;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 
     .container{
         padding-top: 40px;
@@ -240,6 +209,8 @@ body{
         line-height: 16px;
     }
     .hl-container{
+        margin-top: 80px;
+
         a{
             width: 100%;
         }
@@ -249,7 +220,244 @@ body{
 
         p{
             color: #6e504e;
-            font-size: 20px;
+            font-size: 15px;
+            background: url(../images/icon-paymet.png) no-repeat scroll 0 0 transparent;
+            background-size: 30px;
+            padding-left: 44px;
         }
     }
+}
+
+
+// splash
+
+.splash{
+    width: 100%;
+    height: 100vh;
+    background: #fe6a60;
+
+    a{  
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    img{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        width: 80vw;
+    }
+
+}
+
+// header
+
+header{
+    background: #fe6a60;
+    height: 80px;
+    position: relative;
+
+    .user-data{
+        position: absolute;
+        display: flex;
+        height: 80px;
+        top: 40px;
+        left: 55px;
+    
+        img{
+            width: 60px;
+            border-radius: 60px;
+            height: 60px;
+        }
+        p{
+            color: #FFF;
+            font-size: 16px;
+            margin: 10px 0 0 20px;
+        }
+    }
+    
+    .button-collapse, .button-back{
+        color: #FFF;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.places{
+    .user-info-container{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .user-info{
+        display: flex;
+        > p{
+            align-self: center;
+        }
+        .info{
+            font-size: 14px;
+            text-align: right;
+            color: #ffffff;
+            width: 62px;
+            margin-right: 15px;
+        }
+    }
+    .medal{
+        background: url(../images/medal.png) no-repeat scroll 0 0 transparent;
+        height: 35px;
+        display: block;
+        padding-left: 38px;
+        color: #f4d7a9;
+        padding-top: 7px;
+    }
+    .points{
+        background-color: rgba(254, 106, 96, 0.8);
+        font-size: 14px;
+        color: #FFF;
+        width: 100%;
+        position: absolute;
+        bottom: -30px;
+        text-align: center;
+        padding: 5px 0;
+        height: 30px;
+    }
+    .places-list{
+        margin-top: 30px;
+        height: 80vh;
+    }
+    .places-item{
+        height: 25%;
+        position: relative;
+        display: block;
+        overflow: hidden;
+
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, 0.5);
+            position: absolute;
+            //z-index: 2;
+        }
+        &:after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background: #fe6a60;
+            bottom: 0px;
+            z-index: 3;
+        }
+
+        img{
+            max-width: 100%;
+            //z-index: 1;
+        }
+
+
+        .places-item-content{
+            position: absolute;
+            top: 0; 
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            p{
+                font-size: 20px;
+                color: #FFF;
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+    }
+}
+
+.places-category{
+    .places-category-title{
+        background: url(../images/foods/pizza.png);
+        height: 75px;
+        background-size: cover;
+        position: relative;
+
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, 0.5);
+            position: absolute;
+        }
+    }
+    .places-item-content{
+        position: absolute;
+        top: 0; 
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        p{
+            font-size: 20px;
+            color: #FFF;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .places-category-item{
+        
+
+        a{
+            display: block;
+            display: flex;
+            padding: 15px 0;
+
+            > img{
+                margin-right: 20px;
+            }
+        }
+
+        
+    }
+    .place-title{
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+    }
+    .place-address{
+        background: url(../images/pin.png) no-repeat 0 0 transparent;
+        font-size: 13px;
+        background-size: 11px;
+        padding-left: 16px;
+        color: #000;
+    }
+    .place-distance{
+        font-size: 13px;
+        color: #000;
+
+        &.hl{
+            color: #fe6a60;
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+
+        li{
+            list-style: none;
+            border-top: 2px solid red;
+
+            &:first-child{
+                border: none;
+            }
+        }
+    }
+}
+
+.menu-user{
+    background: #fe6a60;
 }
