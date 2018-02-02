@@ -9,24 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- <ul id="slide-out" class="side-nav" style="transform: translateX(0px);">
-        <li><div class="user-view">
-          <div class="background">
-            <img src="http://materializecss.com/images/office.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="http://materializecss.com/images/yuna.jpg"></a>
-          <a href="#!name"><span class="white-text name">John Doe</span></a>
-          <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
-       -->
+    
       
        <div class="wrapper scan">
           <div class="container">
@@ -64,7 +47,21 @@
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="js/main.js"></script>
+  
+  <script>
+    var scan = document.getElementById('scan');
+    var dataShow = document.getElementById('data-show');
+    var loading = document.getElementById('loading');
+
+    scan.addEventListener('click', function(e){
+      e.preventDefault();
+      loading.classList.add('active');
+      this.classList.add('hide');
+      setTimeout(function(){
+        loading.classList.remove('active');
+        dataShow.classList.add('active')
+      }, 2500)
+    })
+  </script>
 </body>
 </html>
