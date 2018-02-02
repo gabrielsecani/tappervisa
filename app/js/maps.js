@@ -42,7 +42,7 @@ function initialize() {
         content: "loading..."
     });
 }
-function geraInfo(nome="", desc=""){
+function geraInfo(nome, desc){
   return '<p style="font-size:14px;"><strong>'+nome+'</strong></br>'+desc+'</p>';
 }
 var mark1 = '../images/mark.svg';
