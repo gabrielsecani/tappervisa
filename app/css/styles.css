@@ -6901,6 +6901,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-width: 4;
   stroke-linecap: round; }
 
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100vh; }
+
 .login {
   background: url("../images/bg-login.png") no-repeat scroll 0 0 transparent;
   background-size: cover;
@@ -6928,10 +6933,21 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 15px;
   text-align: center;
   background-color: #c60613; }
+  .button.btn-icon {
+    display: flex;
+    justify-content: center; }
+    .button.btn-icon > p, .button.btn-icon > i {
+      align-self: center; }
   .button.facebook {
     background-color: #395a93; }
   .button.signup {
     background-color: #c60613; }
+  .button.estabelecimento {
+    background-color: #dca03e; }
+  .button.cliente {
+    background-color: #fe6a60; }
+  .button i {
+    margin-right: 15px; }
 
 .scan {
   padding-top: 40px; }
@@ -7223,5 +7239,14 @@ header {
 
 .menu-user {
   background: #fe6a60; }
+  .menu-user .medal {
+    background: url(../images/medal.png) no-repeat scroll 0 0 transparent;
+    height: 45px !important;
+    display: block;
+    padding-left: 38px !important;
+    color: #f4d7a9;
+    padding-top: 7px !important;
+    line-height: 14px;
+    margin-top: -8px; }
 
 /*# sourceMappingURL=styles.css.map */

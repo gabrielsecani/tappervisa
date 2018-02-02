@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tappers</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+      
+       <div class="wrapper scan">
+          <div class="container">
+              <div class="row">
+                <div class="col s10 offset-s1">
+                  <h1>
+                     Posicione o seu celular
+                     para cadastrar o cartão
+                  </h1>
+                  <div class="scan-content">
+                      <a href="#" id="scan" class="button">Escanear</a>
+
+                      <div id="loading">
+                        <img src="images/loading.gif" alt="">
+                      </div>
+
+                      <div id="data-show">
+                          Cartão escaneado com sucesso
+                          <br>
+                          Hash: b2a8cad6e32b169815f4c7
+
+                          <a href="info-estabelecimento.html" id="scan" class="button">Conferir pontuação</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+     
+           
+     
+           
+       </div>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script>
+    var scan = document.getElementById('scan');
+    var dataShow = document.getElementById('data-show');
+    var loading = document.getElementById('loading');
+
+    scan.addEventListener('click', function(e){
+      e.preventDefault();
+      loading.classList.add('active');
+      this.classList.add('hide');
+      setTimeout(function(){
+        loading.classList.remove('active');
+        dataShow.classList.add('active')
+      }, 2500)
+    })
+  </script>
+</body>
+</html>

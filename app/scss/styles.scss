@@ -42,6 +42,15 @@ body{
     text-align: center;
     background-color: $color-main;
 
+
+    &.btn-icon{
+        display: flex;
+        justify-content: center;
+
+        > p, > i{
+            align-self: center;
+        }
+    }
     &.facebook{
         background-color: #395a93;
     }
@@ -49,6 +58,19 @@ body{
     &.signup{
         background-color: $color-main;
     }
+
+    &.estabelecimento{
+        background-color: #dca03e;
+    }
+
+    &.cliente{
+        background-color: #fe6a60;
+    }
+
+    i{
+        margin-right: 15px;
+    }
+
 }
 
 
@@ -460,4 +482,15 @@ header{
 
 .menu-user{
     background: #fe6a60;
+
+    .medal{
+        background: url(../images/medal.png) no-repeat scroll 0 0 transparent;
+        height: 45px !important;
+        display: block;
+        padding-left: 38px !important;
+        color: #f4d7a9;
+        padding-top: 7px !important;
+        line-height: 14px;
+        margin-top: -8px;
+    }
 }
